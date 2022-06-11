@@ -1,4 +1,4 @@
-# language: pt
+#language: pt
 Funcionalidade: Tela do Produto
 Como cliente da EBAC-SHOP
 Quero configurar meu produto de acordo com meu tamanho e gosto
@@ -8,17 +8,12 @@ Para depois inserir no carrinho
 Resumo:
 Dado que eu entrei na tela do produto
 
-  Cenário: Escolher a cor
-    Quando eu clicar em alguma cor no painel de "Color"
+  Cenário: personalizar um produto
+    Quando eu escolher a cor, tamanho e quantidade (até 10 itens)
     E Clicar em adicionar ao carrinho
-    Então a plataforma deve salvar o modelo com a cor escolhida
+    Então a plataforma deve salvar o modelo com a personalização escolhida
 
-  Cenário: Escolher o tamanho
-    Quando eu clicar em algum tamanho no painel "Size"
-    E Clicar em adicionar ao carrinho
-    Então a plataforma deve salvar o modelo com o tamanho escolhido
-
-  Cenário: Quantidade de produto
-    Quando selecionar algum produto
-    E clicar em comprar item
-    Então a plataforma deve permitir a venda de apenas 10 itens
+  Cenário: Limpar produto da lista de favoritos
+    Quando eu clicar em "Remover" na lista
+    E confirmar a ação
+    Então a plataforma deve remover o item selecionado
