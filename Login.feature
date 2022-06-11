@@ -4,7 +4,7 @@ Quero fazer o login (autenticação) na plataforma
 Para visualizar meus pedidos
 
 Resumo:
-Dado que entrei na tela de login
+Dado que eu acesse a página de de autenticação do site EBAC
 
   Cenário: autenticação válida
     Quando eu digitar o usuário "jose@ebac.com.br"
@@ -14,9 +14,9 @@ Dado que entrei na tela de login
   Cenário: autenticação inválida
     Quando eu digitar o usuário "maria@ebac.com.br"
     E a senha "StrangerThingss04"
-    Então deve aparecer um pop-up na tela pedindo confirmação do e-mail
+    Então deve aparecer a mensagem de erro "Código de confirmação incorreto"
 
-  Cenário: usuário ou senha inválidos
+  Cenário: Senha inválida
     Quando eu digitar o usuário "lucasmyers"
     E a senha "Fotosfofasdegatinhos123"
-    Então deve exibir a mesnagem de alerta: "Usuário ou senha inválidos”
+    Então deve exibir a mensagem de alerta: "Usuário ou senha inválidos”
