@@ -1,5 +1,3 @@
-# exercicio EBAC - Aula 12
+# exercicio EBAC
 
 Exercícios da Ebac do curso Qualidade de Software.
-
-``` Automação de testes com a loja EBAC ```
